@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>columns & rows</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #888;
+      }
+
+      .container {
+        width: 60%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+        /* grid-template-rows: 50px 30px; */
+        /* untuk mengatur baris implisit */
+        /* grid-auto-rows: 50px; */
+        /* untuk mengatur colom implisit */
+        /* grid-auto-flow: column;
+        grid-auto-columns: 70px; */
+      }
+
+      .item {
+        background-color: aqua;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .item:nth-child(even) {
+        background-color: salmon;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+    </div>
+  </body>
+</html>
